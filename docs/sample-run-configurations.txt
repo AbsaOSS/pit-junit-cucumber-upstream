@@ -1,0 +1,13 @@
+Maven command line execution
+mvn clean test -Dproject="Cucumber Junit PAF" -Dteam=PAF -Denvironment=SIT -Dselenium=TRUE -DsendEmail=FALSE -Dheadless=TRUE -Ddry-run=TRUE -Dcucumber.filter.tags=@PAF-Regression
+
+Junit arguments (best practice is to add a maven clean goal before build / launch)
+-ea
+-Dproject="Cucumber Junit PAF"
+-Dteam=PAF
+-Denvironment=SIT
+-Dselenium=TRUE
+-DsendEmail=FALSE
+-Dheadless=TRUE
+-Ddry-run=TRUE
+-Dcucumber.filter.tags=@PAF-Regression

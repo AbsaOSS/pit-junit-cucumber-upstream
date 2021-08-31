@@ -1,0 +1,30 @@
+# Framework
+pom.xml @mzamobile
+.gitignore @mzamobile
+src/test/java/africa/za/gambit/base/ @mzamobile
+src/test/java/africa/za/gambit/stepdefinitions/framework/ @mzamobile
+src/test/resources/cucumber.properties @mzamobile
+src/main/resources/ @mzamobile
+
+# Documentation
+*.md @mzamobile
+
+# Architecture
+/src/main/java/africa/za/gambit/architecture/ @mzamobile @uditgulia
+/src/main/resources/ @mzamobile @uditgulia
+
+# Subatomic
+.sub/ @mzamobile @uditgulia
+
+# PAF
+## Team name: @absa-group/pi-test-automation
+## Team Members: @uditgulia @uditgulia
+    ### Systems
+src/main/java/africa/za/gambit/systems/paf/ @mzamobile @uditgulia
+    ### Features
+src/test/java/africa/za/gambit/features/paf/ @uditgulia
+    ### Step Definintions
+src/test/java/africa/za/gambit/stepdefinitions/paf/ @uditgulia
+    ### Test data
+src/test/resources/data/testdata/paf/ @uditgulia
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>africa.za.gambit</groupId>
+        <artifactId>core-parent</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <properties>
+        <!-- Framework Dependencies -->
+        <core-junit-cucumber.version>2.2.0</core-junit-cucumber.version>
+        <test-utilities.version>2.0.5</test-utilities.version>
+    </properties>
+
+    <name>PIT Cucumber Automation Framework</name>
+    <artifactId>test-junit-cucumber</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- Framework Dependencies -->
+        <dependency>
+            <groupId>africa.za.gambit</groupId>
+            <artifactId>core-junit-cucumber</artifactId>
+            <version>${core-junit-cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>africa.za.gambit</groupId>
+            <artifactId>test-utilities</artifactId>
+            <version>${test-utilities.version}</version>
+        </dependency>
+
+        <!-- Team Specific Dependencies -->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <argLine>-Xmx1024m</argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.trivago.rta</groupId>
+                <artifactId>cluecumber-report-plugin</artifactId>
+                <version>${cluecumber-report-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${maven-compiler-plugin.source}</source>
+                    <target>${maven-compiler-plugin.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
